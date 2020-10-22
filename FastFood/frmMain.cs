@@ -1,0 +1,198 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using FastFood.forms;
+using FontAwesome.Sharp;
+
+namespace FastFood
+{
+    public partial class frmMain : Form
+    {
+        //Fields
+        private IconButton currentBtn;
+        private Panel leftBorderBtn;
+        private Form currentChildForm;
+        public frmMain()
+        {
+            InitializeComponent();
+            leftBorderBtn = new Panel();
+            leftBorderBtn.Size = new Size(7, 64);
+            panelMenu.Controls.Add(leftBorderBtn);
+
+            //Form
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
+        //Methods
+        private void ActivateButton (object senderBtn, Color color)
+        {
+            if (senderBtn != null)
+            {
+                DisableButton();
+                //button
+                currentBtn = (IconButton)senderBtn;
+                currentBtn.BackColor = Color.Black;
+                currentBtn.ForeColor = color;
+                currentBtn.TextAlign = ContentAlignment.MiddleCenter;
+                currentBtn.IconColor = color;
+                currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
+                currentBtn.ImageAlign = ContentAlignment.MiddleRight;
+                //left border button
+                //leftBorderBtn.BackColor = Color.Aqua;
+                //leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
+                //leftBorderBtn.Visible = true;
+                //leftBorderBtn.BringToFront();
+                //icon border button
+                iconCurrentChildForm.IconChar = currentBtn.IconChar;
+                iconCurrentChildForm.IconColor = Color.Firebrick;
+            }
+        }
+        private void DisableButton()
+        {
+            if(currentBtn != null)
+            {
+                currentBtn.BackColor = Color.Firebrick;
+                currentBtn.ForeColor = Color.Cornsilk;
+                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
+                currentBtn.IconColor = Color.Cornsilk;
+                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
+                currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
+            }
+        }
+
+        private void OpenChildForm (Form childForm)
+        {
+            if(currentChildForm != null)
+            {
+                //open only form
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelDesktop.Controls.Add(childForm);
+            childForm.Show();
+            lblChildForm.Text = childForm.Text;
+        }
+
+        private void iBtnDashboard_Click(object sender, EventArgs e)
+        {
+
+            ActivateButton(sender, Color.Yellow);
+            OpenChildForm(new frmDashboard());
+        }
+
+        private void iBtnTransaction_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.Yellow);
+            OpenChildForm(new frmTransaction());
+        }
+
+        private void iBtnSetting_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.Yellow);
+            OpenChildForm(new frmSetting());
+        }
+
+        private void iBtnCustomer_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.Yellow);
+            OpenChildForm(new frmCustomer());
+        }
+
+        private void iBtnProduct_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.Yellow);
+            OpenChildForm(new frmProduct());
+        }
+
+        private void iBtnOrder_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.Yellow);
+            OpenChildForm(new frmOrders());
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            currentChildForm.Close();
+            Reset();
+        }
+
+        private void Reset()
+        {
+            DisableButton();
+            leftBorderBtn.Visible = false;
+            iconCurrentChildForm.IconChar = IconChar.Home;
+            iconCurrentChildForm.IconColor = Color.Firebrick;
+            lblChildForm.Text = "Home";
+        }
+        //Drag Form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+
+        private void PanelTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        
+        private void iconButtonMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconButtonRestore_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void iconButtonClose_Click(object sender, EventArgs e)
+        {
+            frmNotionClose frmNoti = new frmNotionClose();
+            if (frmNoti.ShowDialog() != DialogResult.Yes)
+            {
+                this.Show();
+            }
+            else
+            {
+                System.Environment.Exit(1);
+            }
+        }
+        public frmMain(frmLogin frm)
+        {
+            InitializeComponent();
+            _frmlogin = frm;
+        }
+        frmLogin _frmlogin;
+
+        private void iconButtonLogout_Click(object sender, EventArgs e)
+        {
+            //frmLogOut frmLgOut = new frmLogOut();
+            //if (frmLgOut.ShowDialog() == DialogResult.Yes)
+            //{
+            //    this.Close();
+            //    MessageBox.Show("Logged out successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+        }
+    }
+}
