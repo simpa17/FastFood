@@ -187,12 +187,12 @@ namespace FastFood
 
         private void iconButtonLogout_Click(object sender, EventArgs e)
         {
-            //frmLogOut frmLgOut = new frmLogOut();
-            //if (frmLgOut.ShowDialog() == DialogResult.Yes)
-            //{
-            //    this.Close();
-            //    MessageBox.Show("Logged out successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
+            frmLogOut frmLgOut = new frmLogOut();
+            if (frmLgOut.ShowDialog() == DialogResult.Yes)
+            {
+                this.Close();
+                MessageBox.Show("Logged out successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
