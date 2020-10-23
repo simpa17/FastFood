@@ -26,7 +26,7 @@ namespace FastFood.forms
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
-            guna2DataGridView1.DataSource = table;
+            dgvCustomers.DataSource = table;
         }
         public frmCustomer()
         {
