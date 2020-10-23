@@ -51,11 +51,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("OCR A Extended", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Pacifico", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label1.Location = new System.Drawing.Point(671, 150);
+            this.label1.Location = new System.Drawing.Point(647, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 50);
+            this.label1.Size = new System.Drawing.Size(194, 116);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             // 
@@ -63,11 +63,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Ubuntu Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label2.Location = new System.Drawing.Point(529, 250);
+            this.label2.Location = new System.Drawing.Point(534, 250);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 24);
+            this.label2.Size = new System.Drawing.Size(131, 27);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username:";
             // 
@@ -134,11 +134,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Ubuntu Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Montserrat Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label3.Location = new System.Drawing.Point(529, 334);
+            this.label3.Location = new System.Drawing.Point(539, 332);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 24);
+            this.label3.Size = new System.Drawing.Size(125, 27);
             this.label3.TabIndex = 3;
             this.label3.Text = "Password:";
             // 
@@ -151,7 +151,7 @@
             this.btnSignIn.CheckedState.Parent = this.btnSignIn;
             this.btnSignIn.CustomImages.Parent = this.btnSignIn;
             this.btnSignIn.FillColor = System.Drawing.Color.Maroon;
-            this.btnSignIn.Font = new System.Drawing.Font("Ubuntu Mono", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignIn.ForeColor = System.Drawing.Color.White;
             this.btnSignIn.HoverState.Parent = this.btnSignIn;
             this.btnSignIn.Location = new System.Drawing.Point(647, 425);
@@ -219,12 +219,12 @@
             this.lblWrongPasword.AutoSize = true;
             this.lblWrongPasword.BackColor = System.Drawing.Color.Transparent;
             this.lblWrongPasword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblWrongPasword.Font = new System.Drawing.Font("Ubuntu Mono", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWrongPasword.Font = new System.Drawing.Font("Montserrat Medium", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWrongPasword.ForeColor = System.Drawing.Color.DarkRed;
             this.lblWrongPasword.Location = new System.Drawing.Point(24, 1);
             this.lblWrongPasword.Name = "lblWrongPasword";
             this.lblWrongPasword.Padding = new System.Windows.Forms.Padding(4);
-            this.lblWrongPasword.Size = new System.Drawing.Size(269, 46);
+            this.lblWrongPasword.Size = new System.Drawing.Size(257, 44);
             this.lblWrongPasword.TabIndex = 9;
             this.lblWrongPasword.Text = "Wrong username or password. \r\nPlease try again.";
             this.lblWrongPasword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -243,7 +243,7 @@
             this.panelWrongPass.Location = new System.Drawing.Point(567, 376);
             this.panelWrongPass.Name = "panelWrongPass";
             this.panelWrongPass.ShadowDecoration.Parent = this.panelWrongPass;
-            this.panelWrongPass.Size = new System.Drawing.Size(312, 51);
+            this.panelWrongPass.Size = new System.Drawing.Size(337, 51);
             this.panelWrongPass.TabIndex = 10;
             this.panelWrongPass.Visible = false;
             // 
@@ -253,12 +253,12 @@
             this.lblEnterPass.AutoSize = true;
             this.lblEnterPass.BackColor = System.Drawing.Color.Transparent;
             this.lblEnterPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblEnterPass.Font = new System.Drawing.Font("Ubuntu Mono", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnterPass.Font = new System.Drawing.Font("Montserrat Medium", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEnterPass.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblEnterPass.Location = new System.Drawing.Point(11, 13);
+            this.lblEnterPass.Location = new System.Drawing.Point(5, 13);
             this.lblEnterPass.Name = "lblEnterPass";
             this.lblEnterPass.Padding = new System.Windows.Forms.Padding(4);
-            this.lblEnterPass.Size = new System.Drawing.Size(288, 25);
+            this.lblEnterPass.Size = new System.Drawing.Size(308, 26);
             this.lblEnterPass.TabIndex = 10;
             this.lblEnterPass.Text = "Please enter username and password";
             this.lblEnterPass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
