@@ -87,8 +87,12 @@ namespace FastFood
 
         private void iBtnDashboard_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
 
             ActivateButton(sender, Color.Yellow);
+=======
+            ActivateButton(sender, Color.FromArgb(169, 4, 9));
+>>>>>>> Stashed changes
             OpenChildForm(new frmDashboard());
         }
 
@@ -159,10 +163,12 @@ namespace FastFood
             if (this.WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
+                iconButtonRestore.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
             }
             else
             {
                 this.WindowState = FormWindowState.Normal;
+                iconButtonRestore.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
             }
         }
 

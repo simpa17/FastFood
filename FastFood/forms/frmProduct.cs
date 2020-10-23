@@ -16,5 +16,6 @@ namespace FastFood.forms
         {
             InitializeComponent();
         }
+
     }
 }
