@@ -116,6 +116,11 @@ namespace FastFood
             ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmOrders());
         }
+        private void iBtnStaff_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, Color.FromArgb(169, 4, 9));
+            OpenChildForm(new frmStaff());
+        }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -190,9 +195,6 @@ namespace FastFood
             //}
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
