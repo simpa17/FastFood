@@ -60,7 +60,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.Firebrick;
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
             this.panelMenu.Controls.Add(this.iBtnSetting);
             this.panelMenu.Controls.Add(this.iBtnCustomer);
             this.panelMenu.Controls.Add(this.iBtnProduct);
@@ -81,10 +81,10 @@
             this.iBtnSetting.FlatAppearance.BorderSize = 0;
             this.iBtnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iBtnSetting.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iBtnSetting.Font = new System.Drawing.Font("Ubuntu Mono", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iBtnSetting.ForeColor = System.Drawing.Color.Cornsilk;
+            this.iBtnSetting.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iBtnSetting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnSetting.IconChar = FontAwesome.Sharp.IconChar.Tools;
-            this.iBtnSetting.IconColor = System.Drawing.Color.Cornsilk;
+            this.iBtnSetting.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnSetting.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iBtnSetting.IconSize = 35;
             this.iBtnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,10 +108,10 @@
             this.iBtnCustomer.FlatAppearance.BorderSize = 0;
             this.iBtnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iBtnCustomer.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iBtnCustomer.Font = new System.Drawing.Font("Ubuntu Mono", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iBtnCustomer.ForeColor = System.Drawing.Color.Cornsilk;
+            this.iBtnCustomer.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iBtnCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnCustomer.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
-            this.iBtnCustomer.IconColor = System.Drawing.Color.Cornsilk;
+            this.iBtnCustomer.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnCustomer.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iBtnCustomer.IconSize = 35;
             this.iBtnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -135,10 +135,10 @@
             this.iBtnProduct.FlatAppearance.BorderSize = 0;
             this.iBtnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iBtnProduct.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iBtnProduct.Font = new System.Drawing.Font("Ubuntu Mono", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iBtnProduct.ForeColor = System.Drawing.Color.Cornsilk;
+            this.iBtnProduct.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iBtnProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnProduct.IconChar = FontAwesome.Sharp.IconChar.Tag;
-            this.iBtnProduct.IconColor = System.Drawing.Color.Cornsilk;
+            this.iBtnProduct.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnProduct.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iBtnProduct.IconSize = 35;
             this.iBtnProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,10 +162,10 @@
             this.iBtnTransaction.FlatAppearance.BorderSize = 0;
             this.iBtnTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iBtnTransaction.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iBtnTransaction.Font = new System.Drawing.Font("Ubuntu Mono", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iBtnTransaction.ForeColor = System.Drawing.Color.Cornsilk;
+            this.iBtnTransaction.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iBtnTransaction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnTransaction.IconChar = FontAwesome.Sharp.IconChar.Handshake;
-            this.iBtnTransaction.IconColor = System.Drawing.Color.Cornsilk;
+            this.iBtnTransaction.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnTransaction.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iBtnTransaction.IconSize = 35;
             this.iBtnTransaction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,10 +189,10 @@
             this.iBtnOrder.FlatAppearance.BorderSize = 0;
             this.iBtnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iBtnOrder.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iBtnOrder.Font = new System.Drawing.Font("Ubuntu Mono", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iBtnOrder.ForeColor = System.Drawing.Color.Cornsilk;
+            this.iBtnOrder.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iBtnOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnOrder.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.iBtnOrder.IconColor = System.Drawing.Color.Cornsilk;
+            this.iBtnOrder.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnOrder.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iBtnOrder.IconSize = 35;
             this.iBtnOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -216,10 +216,10 @@
             this.iBtnDashboard.FlatAppearance.BorderSize = 0;
             this.iBtnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iBtnDashboard.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iBtnDashboard.Font = new System.Drawing.Font("Ubuntu Mono", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iBtnDashboard.ForeColor = System.Drawing.Color.Cornsilk;
+            this.iBtnDashboard.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iBtnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnDashboard.IconChar = FontAwesome.Sharp.IconChar.ChartLine;
-            this.iBtnDashboard.IconColor = System.Drawing.Color.Cornsilk;
+            this.iBtnDashboard.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iBtnDashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iBtnDashboard.IconSize = 35;
             this.iBtnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -251,9 +251,10 @@
             // 
             // iconButtonLogout
             // 
-            this.iconButtonLogout.BackColor = System.Drawing.Color.Firebrick;
+            this.iconButtonLogout.BackColor = System.Drawing.Color.Transparent;
+            this.iconButtonLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iconButtonLogout.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
-            this.iconButtonLogout.IconColor = System.Drawing.Color.White;
+            this.iconButtonLogout.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.iconButtonLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonLogout.IconSize = 40;
             this.iconButtonLogout.Location = new System.Drawing.Point(196, 116);
@@ -272,7 +273,7 @@
             this.btnUsername.CustomImages.Parent = this.btnUsername;
             this.btnUsername.FillColor = System.Drawing.Color.DarkRed;
             this.btnUsername.FillColor2 = System.Drawing.Color.Maroon;
-            this.btnUsername.Font = new System.Drawing.Font("Ubuntu Mono", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsername.Font = new System.Drawing.Font("Montserrat Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsername.ForeColor = System.Drawing.Color.White;
             this.btnUsername.HoverState.Parent = this.btnUsername;
             this.btnUsername.Location = new System.Drawing.Point(44, 113);
@@ -286,10 +287,10 @@
             // 
             this.btnHome.Image = global::FastFood.Properties.Resources.fastfood;
             this.btnHome.InitialImage = null;
-            this.btnHome.Location = new System.Drawing.Point(61, 11);
+            this.btnHome.Location = new System.Drawing.Point(63, 13);
             this.btnHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(115, 97);
+            this.btnHome.Size = new System.Drawing.Size(101, 87);
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 0;
             this.btnHome.TabStop = false;
@@ -297,18 +298,19 @@
             // 
             // PanelTitle
             // 
-            this.PanelTitle.BackColor = System.Drawing.Color.Black;
+            this.PanelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
             this.PanelTitle.Controls.Add(this.lblChildForm);
             this.PanelTitle.Controls.Add(this.iconCurrentChildForm);
             this.PanelTitle.Controls.Add(this.iconButtonMinimize);
             this.PanelTitle.Controls.Add(this.iconButtonRestore);
             this.PanelTitle.Controls.Add(this.iconButtonClose);
             this.PanelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.PanelTitle.Location = new System.Drawing.Point(242, 0);
             this.PanelTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelTitle.Name = "PanelTitle";
             this.PanelTitle.ShadowDecoration.Parent = this.PanelTitle;
-            this.PanelTitle.Size = new System.Drawing.Size(835, 51);
+            this.PanelTitle.Size = new System.Drawing.Size(835, 56);
             this.PanelTitle.TabIndex = 1;
             this.PanelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelTitle_MouseDown);
             // 
@@ -316,12 +318,12 @@
             // 
             this.lblChildForm.AutoSize = true;
             this.lblChildForm.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblChildForm.Font = new System.Drawing.Font("Ubuntu Mono", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChildForm.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblChildForm.Location = new System.Drawing.Point(45, 0);
+            this.lblChildForm.Font = new System.Drawing.Font("Pacifico", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChildForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
+            this.lblChildForm.Location = new System.Drawing.Point(79, 0);
+            this.lblChildForm.Margin = new System.Windows.Forms.Padding(0);
             this.lblChildForm.Name = "lblChildForm";
-            this.lblChildForm.Padding = new System.Windows.Forms.Padding(10);
-            this.lblChildForm.Size = new System.Drawing.Size(88, 48);
+            this.lblChildForm.Size = new System.Drawing.Size(94, 52);
             this.lblChildForm.TabIndex = 1;
             this.lblChildForm.Text = "Home";
             this.lblChildForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -329,16 +331,17 @@
             // iconCurrentChildForm
             // 
             this.iconCurrentChildForm.BackColor = System.Drawing.Color.Transparent;
+            this.iconCurrentChildForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.iconCurrentChildForm.Dock = System.Windows.Forms.DockStyle.Left;
-            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.Cornsilk;
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.Cornsilk;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCurrentChildForm.IconSize = 45;
             this.iconCurrentChildForm.Location = new System.Drawing.Point(0, 0);
             this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(45, 51);
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(79, 56);
             this.iconCurrentChildForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.iconCurrentChildForm.TabIndex = 0;
             this.iconCurrentChildForm.TabStop = false;
@@ -347,12 +350,13 @@
             // 
             this.iconButtonMinimize.BackColor = System.Drawing.Color.Transparent;
             this.iconButtonMinimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconButtonMinimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
             this.iconButtonMinimize.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.iconButtonMinimize.IconColor = System.Drawing.Color.White;
+            this.iconButtonMinimize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
             this.iconButtonMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonMinimize.Location = new System.Drawing.Point(739, 0);
             this.iconButtonMinimize.Name = "iconButtonMinimize";
-            this.iconButtonMinimize.Size = new System.Drawing.Size(32, 51);
+            this.iconButtonMinimize.Size = new System.Drawing.Size(32, 56);
             this.iconButtonMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconButtonMinimize.TabIndex = 4;
             this.iconButtonMinimize.TabStop = false;
@@ -362,12 +366,13 @@
             // 
             this.iconButtonRestore.BackColor = System.Drawing.Color.Transparent;
             this.iconButtonRestore.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconButtonRestore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
             this.iconButtonRestore.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.iconButtonRestore.IconColor = System.Drawing.Color.White;
+            this.iconButtonRestore.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
             this.iconButtonRestore.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonRestore.Location = new System.Drawing.Point(771, 0);
             this.iconButtonRestore.Name = "iconButtonRestore";
-            this.iconButtonRestore.Size = new System.Drawing.Size(32, 51);
+            this.iconButtonRestore.Size = new System.Drawing.Size(32, 56);
             this.iconButtonRestore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconButtonRestore.TabIndex = 3;
             this.iconButtonRestore.TabStop = false;
@@ -377,12 +382,13 @@
             // 
             this.iconButtonClose.BackColor = System.Drawing.Color.Transparent;
             this.iconButtonClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconButtonClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
             this.iconButtonClose.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.iconButtonClose.IconColor = System.Drawing.Color.White;
+            this.iconButtonClose.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
             this.iconButtonClose.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButtonClose.Location = new System.Drawing.Point(803, 0);
             this.iconButtonClose.Name = "iconButtonClose";
-            this.iconButtonClose.Size = new System.Drawing.Size(32, 51);
+            this.iconButtonClose.Size = new System.Drawing.Size(32, 56);
             this.iconButtonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconButtonClose.TabIndex = 2;
             this.iconButtonClose.TabStop = false;
@@ -390,9 +396,9 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.DimGray;
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(190)))), ((int)(((byte)(7)))));
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(242, 51);
+            this.guna2Panel1.Location = new System.Drawing.Point(242, 56);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
@@ -401,13 +407,13 @@
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.Transparent;
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDesktop.Location = new System.Drawing.Point(242, 56);
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(242, 61);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.ShadowDecoration.Parent = this.panelDesktop;
-            this.panelDesktop.Size = new System.Drawing.Size(835, 539);
+            this.panelDesktop.Size = new System.Drawing.Size(835, 558);
             this.panelDesktop.TabIndex = 3;
             // 
             // frmMain
@@ -425,6 +431,7 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonLogout)).EndInit();

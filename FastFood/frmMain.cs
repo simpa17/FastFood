@@ -40,30 +40,25 @@ namespace FastFood
                 DisableButton();
                 //button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.Black;
+                currentBtn.BackColor = Color.FromArgb(235, 212, 137);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
-                //left border button
-                //leftBorderBtn.BackColor = Color.Aqua;
-                //leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                //leftBorderBtn.Visible = true;
-                //leftBorderBtn.BringToFront();
-                //icon border button
                 iconCurrentChildForm.IconChar = currentBtn.IconChar;
                 iconCurrentChildForm.IconColor = Color.Firebrick;
+                iconCurrentChildForm.IconSize = 45;
             }
         }
         private void DisableButton()
         {
             if(currentBtn != null)
             {
-                currentBtn.BackColor = Color.Firebrick;
-                currentBtn.ForeColor = Color.Cornsilk;
+                currentBtn.BackColor = Color.FromArgb(169, 4, 9);
+                currentBtn.ForeColor = Color.FromArgb(235, 212, 137);
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Cornsilk;
+                currentBtn.IconColor = Color.FromArgb(235, 212, 137);
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -88,37 +83,37 @@ namespace FastFood
         private void iBtnDashboard_Click(object sender, EventArgs e)
         {
 
-            ActivateButton(sender, Color.Yellow);
+            ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmDashboard());
         }
 
         private void iBtnTransaction_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, Color.Yellow);
+            ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmTransaction());
         }
 
         private void iBtnSetting_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, Color.Yellow);
+            ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmSetting());
         }
 
         private void iBtnCustomer_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, Color.Yellow);
+            ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmCustomer());
         }
 
         private void iBtnProduct_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, Color.Yellow);
+            ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmProduct());
         }
 
         private void iBtnOrder_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, Color.Yellow);
+            ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmOrders());
         }
 
@@ -133,7 +128,7 @@ namespace FastFood
             DisableButton();
             leftBorderBtn.Visible = false;
             iconCurrentChildForm.IconChar = IconChar.Home;
-            iconCurrentChildForm.IconColor = Color.Firebrick;
+            iconCurrentChildForm.IconColor = Color.FromArgb(169, 4, 9);
             lblChildForm.Text = "Home";
         }
         //Drag Form
@@ -193,6 +188,11 @@ namespace FastFood
             //    this.Close();
             //    MessageBox.Show("Logged out successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //}
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
