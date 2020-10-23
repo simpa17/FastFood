@@ -31,6 +31,7 @@
             this.panelMenu = new System.Windows.Forms.Panel();
             this.iBtnSetting = new FontAwesome.Sharp.IconButton();
             this.iBtnCustomer = new FontAwesome.Sharp.IconButton();
+            this.iBtnStaff = new FontAwesome.Sharp.IconButton();
             this.iBtnProduct = new FontAwesome.Sharp.IconButton();
             this.iBtnTransaction = new FontAwesome.Sharp.IconButton();
             this.iBtnOrder = new FontAwesome.Sharp.IconButton();
@@ -63,6 +64,7 @@
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
             this.panelMenu.Controls.Add(this.iBtnSetting);
             this.panelMenu.Controls.Add(this.iBtnCustomer);
+            this.panelMenu.Controls.Add(this.iBtnStaff);
             this.panelMenu.Controls.Add(this.iBtnProduct);
             this.panelMenu.Controls.Add(this.iBtnTransaction);
             this.panelMenu.Controls.Add(this.iBtnOrder);
@@ -88,7 +90,7 @@
             this.iBtnSetting.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iBtnSetting.IconSize = 35;
             this.iBtnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iBtnSetting.Location = new System.Drawing.Point(0, 483);
+            this.iBtnSetting.Location = new System.Drawing.Point(0, 548);
             this.iBtnSetting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iBtnSetting.Name = "iBtnSetting";
             this.iBtnSetting.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
@@ -115,7 +117,7 @@
             this.iBtnCustomer.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iBtnCustomer.IconSize = 35;
             this.iBtnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iBtnCustomer.Location = new System.Drawing.Point(0, 418);
+            this.iBtnCustomer.Location = new System.Drawing.Point(0, 483);
             this.iBtnCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iBtnCustomer.Name = "iBtnCustomer";
             this.iBtnCustomer.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
@@ -128,6 +130,33 @@
             this.iBtnCustomer.UseCompatibleTextRendering = true;
             this.iBtnCustomer.UseVisualStyleBackColor = true;
             this.iBtnCustomer.Click += new System.EventHandler(this.iBtnCustomer_Click);
+            // 
+            // iBtnStaff
+            // 
+            this.iBtnStaff.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iBtnStaff.FlatAppearance.BorderSize = 0;
+            this.iBtnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iBtnStaff.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iBtnStaff.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iBtnStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
+            this.iBtnStaff.IconChar = FontAwesome.Sharp.IconChar.UserCircle;
+            this.iBtnStaff.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(137)))));
+            this.iBtnStaff.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iBtnStaff.IconSize = 35;
+            this.iBtnStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iBtnStaff.Location = new System.Drawing.Point(0, 418);
+            this.iBtnStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iBtnStaff.Name = "iBtnStaff";
+            this.iBtnStaff.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.iBtnStaff.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.iBtnStaff.Rotation = 0D;
+            this.iBtnStaff.Size = new System.Drawing.Size(242, 65);
+            this.iBtnStaff.TabIndex = 7;
+            this.iBtnStaff.Text = "Staffs";
+            this.iBtnStaff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iBtnStaff.UseCompatibleTextRendering = true;
+            this.iBtnStaff.UseVisualStyleBackColor = true;
+            this.iBtnStaff.Click += new System.EventHandler(this.iBtnStaff_Click);
             // 
             // iBtnProduct
             // 
@@ -337,7 +366,7 @@
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 45;
+            this.iconCurrentChildForm.IconSize = 56;
             this.iconCurrentChildForm.Location = new System.Drawing.Point(0, 0);
             this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
@@ -431,7 +460,6 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
-            this.Load += new System.EventHandler(this.frmMain_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonLogout)).EndInit();
@@ -467,5 +495,6 @@
         private FontAwesome.Sharp.IconPictureBox iconButtonMinimize;
         private Guna.UI2.WinForms.Guna2GradientTileButton btnUsername;
         private FontAwesome.Sharp.IconPictureBox iconButtonLogout;
+        private FontAwesome.Sharp.IconButton iBtnStaff;
     }
 }
