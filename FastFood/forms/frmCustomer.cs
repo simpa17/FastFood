@@ -40,5 +40,6 @@ namespace FastFood.forms
             loadData();
 
         }
+
     }
 }

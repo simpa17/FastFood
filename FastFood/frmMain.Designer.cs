@@ -48,6 +48,10 @@
             this.iconButtonClose = new FontAwesome.Sharp.IconPictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelDesktop = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.panelHome = new Guna.UI2.WinForms.Guna2Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonLogout)).BeginInit();
@@ -57,6 +61,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonRestore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonClose)).BeginInit();
+            this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.panelHome.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -437,6 +444,9 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
+            this.panelDesktop.BackgroundImage = global::FastFood.Properties.Resources.fast_food_background_photos_fast_food_background_vectors_and_psd_food_backgrounds_png_800_291;
+            this.panelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelDesktop.Controls.Add(this.panelHome);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(242, 61);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -445,11 +455,71 @@
             this.panelDesktop.Size = new System.Drawing.Size(835, 558);
             this.panelDesktop.TabIndex = 3;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Pacifico", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
+            this.label1.Location = new System.Drawing.Point(11, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(503, 97);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Fast Food and Friend";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button1.BorderRadius = 25;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Pacifico", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(226, 153);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(167, 62);
+            this.guna2Button1.TabIndex = 1;
+            this.guna2Button1.Text = "Order Here";
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.HandPointRight;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconPictureBox1.IconSize = 52;
+            this.iconPictureBox1.Location = new System.Drawing.Point(135, 163);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(76, 52);
+            this.iconPictureBox1.TabIndex = 2;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // panelHome
+            // 
+            this.panelHome.BackColor = System.Drawing.Color.Transparent;
+            this.panelHome.Controls.Add(this.iconPictureBox1);
+            this.panelHome.Controls.Add(this.guna2Button1);
+            this.panelHome.Controls.Add(this.label1);
+            this.panelHome.Location = new System.Drawing.Point(6, 118);
+            this.panelHome.Name = "panelHome";
+            this.panelHome.ShadowDecoration.Parent = this.panelHome;
+            this.panelHome.Size = new System.Drawing.Size(829, 440);
+            this.panelHome.TabIndex = 0;
+            this.panelHome.UseTransparentBackground = true;
+            // 
             // frmMain
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1077, 619);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.guna2Panel1);
@@ -460,6 +530,7 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonLogout)).EndInit();
@@ -470,6 +541,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonRestore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonClose)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.panelHome.ResumeLayout(false);
+            this.panelHome.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -496,5 +571,9 @@
         private Guna.UI2.WinForms.Guna2GradientTileButton btnUsername;
         private FontAwesome.Sharp.IconPictureBox iconButtonLogout;
         private FontAwesome.Sharp.IconButton iBtnStaff;
+        private Guna.UI2.WinForms.Guna2Panel panelHome;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label label1;
     }
 }

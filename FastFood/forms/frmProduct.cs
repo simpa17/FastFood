@@ -16,5 +16,10 @@ namespace FastFood.forms
         {
             InitializeComponent();
         }
+
+        private void frmProduct_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

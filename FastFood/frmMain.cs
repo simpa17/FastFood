@@ -85,45 +85,53 @@ namespace FastFood
 
             ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmDashboard());
+            panelHome.Visible = false;
         }
 
         private void iBtnTransaction_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmTransaction());
+            panelHome.Visible = false;
         }
 
         private void iBtnSetting_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmSetting());
+            panelHome.Visible = false;
         }
 
         private void iBtnCustomer_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmCustomer());
+            panelHome.Visible = false;
         }
 
         private void iBtnProduct_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmProduct());
+            panelHome.Visible = false;
         }
 
         private void iBtnOrder_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmOrders());
+            panelHome.Visible = false;
         }
         private void iBtnStaff_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(169, 4, 9));
             OpenChildForm(new frmStaff());
+            panelHome.Visible = false;
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            panelHome.Visible = true;
             currentChildForm.Close();
             Reset();
         }
@@ -187,14 +195,17 @@ namespace FastFood
 
         private void iconButtonLogout_Click(object sender, EventArgs e)
         {
-            //frmLogOut frmLgOut = new frmLogOut();
-            //if (frmLgOut.ShowDialog() == DialogResult.Yes)
-            //{
-            //    this.Close();
-            //    MessageBox.Show("Logged out successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
+            frmLogOut frmLgOut = new frmLogOut();
+            if (frmLgOut.ShowDialog() == DialogResult.Yes)
+            {
+                this.Close();
+                MessageBox.Show("Logged out successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
-       
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -326,6 +326,8 @@
   <ItemGroup>
     <Content Include="Content\animate.css" />
     <Content Include="Content\animate.min.css" />
+    <None Include="Resources\fast-food-background-photos-fast-food-background-vectors-and-psd-food-backgrounds-png-800_291.png" />
+    <None Include="Resources\6764421.png" />
     <None Include="Resources\Download premium vector of White and gold hexagon pattern background.jfif" />
   </ItemGroup>
   <ItemGroup>
