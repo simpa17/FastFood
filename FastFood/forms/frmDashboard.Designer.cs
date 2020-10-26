@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.chartRevenue = new LiveCharts.WinForms.CartesianChart();
+            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -37,7 +38,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.guna2DateTimePicker4 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblFistFood = new System.Windows.Forms.Label();
@@ -62,6 +62,8 @@
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
@@ -78,6 +80,10 @@
             this.lbVisitors = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel20 = new Guna.UI2.WinForms.Guna2Panel();
+            this.revenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
             this.guna2GradientPanel4.SuspendLayout();
@@ -90,6 +96,7 @@
             this.guna2Panel11.SuspendLayout();
             this.guna2Panel13.SuspendLayout();
             this.guna2Panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.guna2Panel14.SuspendLayout();
             this.guna2Panel18.SuspendLayout();
             this.guna2Panel17.SuspendLayout();
@@ -102,6 +109,7 @@
             this.panelVistor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.guna2Panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -115,15 +123,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "To";
             // 
-            // chartRevenue
+            // cartesianChart1
             // 
-            this.chartRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartRevenue.Font = new System.Drawing.Font("Ubuntu Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chartRevenue.Location = new System.Drawing.Point(0, 0);
-            this.chartRevenue.Name = "chartRevenue";
-            this.chartRevenue.Size = new System.Drawing.Size(592, 346);
-            this.chartRevenue.TabIndex = 2;
-            this.chartRevenue.Text = "cartesianChart1";
+            this.cartesianChart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cartesianChart1.Font = new System.Drawing.Font("Ubuntu Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cartesianChart1.Location = new System.Drawing.Point(0, 0);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(592, 346);
+            this.cartesianChart1.TabIndex = 2;
+            this.cartesianChart1.Text = "ChartRevenue";
             // 
             // guna2DateTimePicker1
             // 
@@ -237,18 +245,6 @@
             this.label7.Size = new System.Drawing.Size(49, 40);
             this.label7.TabIndex = 10;
             this.label7.Text = "To";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
-            this.guna2Panel1.BorderColor = System.Drawing.Color.White;
-            this.guna2Panel1.BorderRadius = 10;
-            this.guna2Panel1.BorderThickness = 2;
-            this.guna2Panel1.Location = new System.Drawing.Point(8, 53);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(171, 219);
-            this.guna2Panel1.TabIndex = 14;
             // 
             // label8
             // 
@@ -500,7 +496,7 @@
             // 
             // guna2Panel13
             // 
-            this.guna2Panel13.Controls.Add(this.chartRevenue);
+            this.guna2Panel13.Controls.Add(this.cartesianChart1);
             this.guna2Panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel13.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel13.Name = "guna2Panel13";
@@ -510,13 +506,40 @@
             // 
             // guna2Panel12
             // 
-            this.guna2Panel12.Controls.Add(this.guna2Panel1);
+            this.guna2Panel12.Controls.Add(this.dataGridView1);
+            this.guna2Panel12.Controls.Add(this.btnLoad);
             this.guna2Panel12.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel12.Location = new System.Drawing.Point(592, 0);
             this.guna2Panel12.Name = "guna2Panel12";
             this.guna2Panel12.ShadowDecoration.Parent = this.guna2Panel12;
             this.guna2Panel12.Size = new System.Drawing.Size(185, 346);
             this.guna2Panel12.TabIndex = 15;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.yearDataGridViewTextBoxColumn,
+            this.monthDataGridViewTextBoxColumn,
+            this.valueDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.revenueBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 6);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(182, 219);
+            this.dataGridView1.TabIndex = 16;
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            this.btnLoad.Location = new System.Drawing.Point(36, 231);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(117, 47);
+            this.btnLoad.TabIndex = 15;
+            this.btnLoad.Text = "&Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
             // 
             // guna2Panel14
             // 
@@ -716,6 +739,34 @@
             this.guna2Panel20.Size = new System.Drawing.Size(777, 307);
             this.guna2Panel20.TabIndex = 28;
             // 
+            // revenueBindingSource
+            // 
+            this.revenueBindingSource.DataSource = typeof(FastFood.Revenue);
+            // 
+            // yearDataGridViewTextBoxColumn
+            // 
+            this.yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
+            this.yearDataGridViewTextBoxColumn.HeaderText = "Year";
+            this.yearDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
+            this.yearDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // monthDataGridViewTextBoxColumn
+            // 
+            this.monthDataGridViewTextBoxColumn.DataPropertyName = "Month";
+            this.monthDataGridViewTextBoxColumn.HeaderText = "Month";
+            this.monthDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.monthDataGridViewTextBoxColumn.Name = "monthDataGridViewTextBoxColumn";
+            this.monthDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // valueDataGridViewTextBoxColumn
+            // 
+            this.valueDataGridViewTextBoxColumn.DataPropertyName = "Value";
+            this.valueDataGridViewTextBoxColumn.HeaderText = "Value";
+            this.valueDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.valueDataGridViewTextBoxColumn.Name = "valueDataGridViewTextBoxColumn";
+            this.valueDataGridViewTextBoxColumn.Width = 125;
+            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -736,6 +787,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmDashboard";
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.frmDashboard_Load);
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
             this.guna2GradientPanel3.ResumeLayout(false);
@@ -753,6 +805,7 @@
             this.guna2Panel11.ResumeLayout(false);
             this.guna2Panel13.ResumeLayout(false);
             this.guna2Panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.guna2Panel14.ResumeLayout(false);
             this.guna2Panel18.ResumeLayout(false);
             this.guna2Panel18.PerformLayout();
@@ -771,6 +824,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.guna2Panel20.ResumeLayout(false);
             this.guna2Panel20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.revenueBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -778,7 +832,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private LiveCharts.WinForms.CartesianChart chartRevenue;
+        private LiveCharts.WinForms.CartesianChart cartesianChart1;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
@@ -786,7 +840,6 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker4;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private System.Windows.Forms.Label lblFistFood;
@@ -827,5 +880,11 @@
         private System.Windows.Forms.Label lbVisitors;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel20;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yearDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monthDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valueDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource revenueBindingSource;
     }
 }

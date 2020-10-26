@@ -252,6 +252,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyFastFoodDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Revenue.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +297,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Revenue.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

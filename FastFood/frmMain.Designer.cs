@@ -48,10 +48,10 @@
             this.iconButtonClose = new FontAwesome.Sharp.IconPictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelDesktop = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panelHome = new Guna.UI2.WinForms.Guna2Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonLogout)).BeginInit();
@@ -62,8 +62,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonRestore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonClose)).BeginInit();
             this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panelHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -455,17 +455,33 @@
             this.panelDesktop.Size = new System.Drawing.Size(835, 558);
             this.panelDesktop.TabIndex = 3;
             // 
-            // label1
+            // panelHome
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Pacifico", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
-            this.label1.Location = new System.Drawing.Point(11, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(503, 97);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Fast Food and Friend";
+            this.panelHome.BackColor = System.Drawing.Color.Transparent;
+            this.panelHome.Controls.Add(this.iconPictureBox1);
+            this.panelHome.Controls.Add(this.guna2Button1);
+            this.panelHome.Controls.Add(this.label1);
+            this.panelHome.Location = new System.Drawing.Point(6, 118);
+            this.panelHome.Name = "panelHome";
+            this.panelHome.ShadowDecoration.Parent = this.panelHome;
+            this.panelHome.Size = new System.Drawing.Size(829, 440);
+            this.panelHome.TabIndex = 0;
+            this.panelHome.UseTransparentBackground = true;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.HandPointRight;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconPictureBox1.IconSize = 52;
+            this.iconPictureBox1.Location = new System.Drawing.Point(135, 163);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(76, 52);
+            this.iconPictureBox1.TabIndex = 2;
+            this.iconPictureBox1.TabStop = false;
             // 
             // guna2Button1
             // 
@@ -484,33 +500,17 @@
             this.guna2Button1.TabIndex = 1;
             this.guna2Button1.Text = "Order Here";
             // 
-            // iconPictureBox1
+            // label1
             // 
-            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.HandPointRight;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconPictureBox1.IconSize = 52;
-            this.iconPictureBox1.Location = new System.Drawing.Point(135, 163);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(76, 52);
-            this.iconPictureBox1.TabIndex = 2;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // panelHome
-            // 
-            this.panelHome.BackColor = System.Drawing.Color.Transparent;
-            this.panelHome.Controls.Add(this.iconPictureBox1);
-            this.panelHome.Controls.Add(this.guna2Button1);
-            this.panelHome.Controls.Add(this.label1);
-            this.panelHome.Location = new System.Drawing.Point(6, 118);
-            this.panelHome.Name = "panelHome";
-            this.panelHome.ShadowDecoration.Parent = this.panelHome;
-            this.panelHome.Size = new System.Drawing.Size(829, 440);
-            this.panelHome.TabIndex = 0;
-            this.panelHome.UseTransparentBackground = true;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Pacifico", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(9)))));
+            this.label1.Location = new System.Drawing.Point(11, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(503, 97);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Fast Food and Friend";
             // 
             // frmMain
             // 
@@ -542,9 +542,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonRestore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconButtonClose)).EndInit();
             this.panelDesktop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panelHome.ResumeLayout(false);
             this.panelHome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
