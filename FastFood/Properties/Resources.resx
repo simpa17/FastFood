@@ -118,10 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Download premium vector of White and gold hexagon pattern background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Download premium vector of White and gold hexagon pattern background.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6764421" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6764421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fastfood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fastfood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Download premium vector of White and gold hexagon pattern background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Download premium vector of White and gold hexagon pattern background.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fast-food-background-photos-fast-food-background-vectors-and-psd-food-backgrounds-png-800_291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fast-food-background-photos-fast-food-background-vectors-and-psd-food-backgrounds-png-800_291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

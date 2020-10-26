@@ -63,9 +63,30 @@ namespace FastFood.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6764421 {
+            get {
+                object obj = ResourceManager.GetObject("6764421", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Download_premium_vector_of_White_and_gold_hexagon_pattern_background {
             get {
                 object obj = ResourceManager.GetObject("Download premium vector of White and gold hexagon pattern background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fast_food_background_photos_fast_food_background_vectors_and_psd_food_backgrounds_png_800_291 {
+            get {
+                object obj = ResourceManager.GetObject("fast-food-background-photos-fast-food-background-vectors-and-psd-food-backgrounds" +
+                        "-png-800_291", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
