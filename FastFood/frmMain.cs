@@ -167,10 +167,13 @@ namespace FastFood
             if (this.WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
+                iconButtonRestore.IconChar = IconChar.WindowRestore;
+
             }
             else
             {
                 this.WindowState = FormWindowState.Normal;
+                iconButtonRestore.IconChar = IconChar.WindowMaximize;
             }
         }
 
